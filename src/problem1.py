@@ -802,10 +802,17 @@ def problem1d(strings):
       :rtype: str | -1
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
+    seq = strings
+
+    for k in range(len(seq)):
+        a = seq[k]
+        if is_prime(len(a)):
+            return a
+    return -1
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
